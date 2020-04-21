@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .disp-none{
+                display: none;
+            }
+        </style>
+        <script src="trans.js"></script>
+       
+    </head>
+    <body>
+        
+        <p>
+            Acno:<input id='acno' /><input type='button' value='submit' onClick="fnGetCustInfo()" />
+        </p>
+        
+        <div id="trans-content" class="disp-none">
+            <h1 id='cust-name'></h1>
+            <p>
+                Trans type: <select>
+                    <option>deposit</option>
+                    <option>withdraw</option>
+                </select>
+            </p>
+            <p>
+                Amount <input type='number' />
+            </p>
+            <p>
+                <input type='button' value='submit'/>
+            </p>
+        </div>
+    </body>
+</html>
